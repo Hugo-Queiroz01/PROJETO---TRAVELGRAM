@@ -1,0 +1,19 @@
+main {
+  /* * flex no main faz com que todas as img fiquem inline */
+  display: flex;
+  /* * wrap faz com que as imagens quando ultrapassam o limite da tela 
+      * Elas "quebrem" a linha */
+  flex-wrap: wrap;
+  /* * espaço entre os elementos */
+  gap: 24px;
+  /* * padding no eixo vertical */
+  padding-block: 24px;
+}
+
+main img {
+  /* * Altura e largura máxima */
+  width: 286px;
+  height: 286px;
+  /* * object-fit: cover signica que as imagens devem cobrir o espaço da tela */
+  object-fit: cover;
+}

@@ -6,6 +6,7 @@ header {
 
 header .container {
   display: flex;
+  /* * Adiciona espaços entre os elementos */
   justify-content: space-between;
 }
 
@@ -42,6 +43,7 @@ header .container {
 }
 
 #info li {
+  /* * Alinha e coloca os elementos com espaços entre eles */
   display: flex;
   align-items: center;
   gap: 8px;

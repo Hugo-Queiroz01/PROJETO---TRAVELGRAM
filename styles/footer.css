@@ -1,0 +1,11 @@
+footer {
+  /* * Flex, espaçamento e padding no eixo vertical */
+  display: flex;
+  gap: 24px;
+  padding-block: 24px;
+}
+
+/* TODO pseudo-selector nth-child(1) */
+footer span:nth-child(1) {
+  margin-right: auto;
+}
