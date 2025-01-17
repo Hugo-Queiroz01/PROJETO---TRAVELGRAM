@@ -1,0 +1,52 @@
+header {
+  /* * padding no eixo vertical */
+  padding-block: 32px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#profile {
+  display: flex;
+  /* * Alinha a div #profile ao centro no eixo vertical */
+  align-items: center;
+  /* * espaço entre os elementos */
+  gap: 32px;
+}
+
+/* * primeira div de #profile */
+#profile > div {
+  max-width: 384px;
+}
+
+#profile h1 {
+  font: var(--text-lg);
+  color: var(--text-color-primary);
+  margin-bottom: 8px;
+}
+
+#profile p {
+  font: var(--text-md);
+}
+
+#info {
+  /* * Tira a bolinha de marcação da lista */
+  list-style: none;
+  /* * Display flex para ficarem inline */
+  display: flex;
+  /* * flex-direction para ficarem um abaixo do outro */
+  flex-direction: column;
+  /* * Espaçamento entre o texto e o ícone */
+  gap: 16px;
+  /* * Largura da caixa */
+  width: 280px;
+}
+
+#info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+}
