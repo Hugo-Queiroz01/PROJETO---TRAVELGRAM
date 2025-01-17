@@ -3,6 +3,8 @@ footer {
   display: flex;
   gap: 24px;
   padding-block: 24px;
+
+  font: 14px/150% var(--font-family);
 }
 
 /* TODO pseudo-selector nth-child(1) */

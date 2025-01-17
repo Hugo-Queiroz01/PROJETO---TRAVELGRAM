@@ -23,6 +23,16 @@ header .container {
   max-width: 384px;
 }
 
+#profile img {
+  /* * Largura e altura máxima */
+  width: 176px;
+  height: 176px;
+  /* * Faz com que a imagem cubra todo o espaço dela */
+  object-fit: cover;
+  /* * arredondamento de bora para caso for alguma outra imagem */
+  border-radius: 50%;
+}
+
 #profile h1 {
   font: var(--text-lg);
   color: var(--text-color-primary);
