@@ -1,0 +1,35 @@
+nav {
+  /* * Elementos um ao lado do outro */
+  display: flex;
+  /* * Adicionando espaço entre os elementos */
+  justify-content: space-between;
+  /* * Alinhando ao centro no eixo main */
+  align-items: center;
+  /* * Zerando a altura de linha */
+  line-height: 0;
+  /* * Adicionando padding no eixo vertical */
+  padding-block: 20px;
+}
+
+nav ul {
+  /* * Sem marcações no itens da lista */
+  list-style: none;
+  /* * Elementos um ao lado do outro */
+  display: flex;
+  /* * Alinhando ao centro no eixo main */
+  align-items: center;
+  /* * Adicionado espaço lateral nos itens */
+  gap: 24px;
+  /* * Adicionado padding no eixo vertical */
+  padding-block: 8px;
+}
+
+/* * Seletor de pseudo-classes last-child */
+
+nav ul li:last-child img {
+  width: 40px;
+  height: 40px;
+  /* ? Para imagens que não estão na proporção correta */
+  object-fit: cover;
+  border-radius: 50%;
+}

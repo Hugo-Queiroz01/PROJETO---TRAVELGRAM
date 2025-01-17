@@ -30,3 +30,38 @@
   --text-md: 14px/170% var(--font-family);
   --text-sm: 12px/170% var(--font-family);
 }
+
+body {
+  font: var(--text);
+  color: var(--text-color-secondary);
+  background-color: var(--background-color);
+}
+
+a {
+  /* * Tirando o underline dos links */
+  text-decoration: none;
+  /* * Tirando a cor padrão dos links e herdando da tag pai */
+  color: inherit;
+
+}
+
+a:hover {
+  /* * Adicionando cor e estilo ao passar o mouse em cima */
+  color:var(--brand-color);
+  text-decoration: underline;
+}
+
+.container {
+  /* * Adicionando padding nas laterais */
+  padding-inline: 32px;
+  /* * Largura máxima */
+  max-width: 1280px;
+  /* * Margin no eixo main */
+  margin-inline: auto;
+}
+
+/* * Define a cor de fundo do div que contém o nav */
+
+.bg-surface-color {
+  background-color: var(--surface-color);
+}
