@@ -42,6 +42,15 @@ nav ul li:last-child img {
   #logo>img {
     max-width: 100%;
   }
+
+  main.container {
+    justify-content: center;
+  }
+
+  footer > span {
+    padding-left: 10px;
+    text-align: center;
+  }
 }
 
 @media (width >= 80em) {
