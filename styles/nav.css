@@ -33,3 +33,100 @@ nav ul li:last-child img {
   object-fit: cover;
   border-radius: 50%;
 }
+
+@media (width <=1000px) {
+  #primary-menu {
+    display: none;
+  }
+
+  #logo>img {
+    max-width: 100%;
+  }
+}
+
+@media (width >= 80em) {
+  .menu-mobile {
+    display: none;
+  }
+
+  .btn-open-menu {
+    display: none;
+  }
+
+  .overlay-menu {
+    display: none;
+  }
+}
+
+.menu-mobile {
+  background-color: rgba(194, 190, 190, 0.566);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0%;
+  overflow: hidden;
+  z-index: 9999;
+  transition: .5s;
+}
+
+.menu-mobile.open-menu {
+  width: 70%;
+}
+
+.menu-mobile.open-menu ~ .overlay-menu {
+  display: block;
+}
+
+.menu-mobile ul {
+  display: grid;
+  text-align: right;
+  padding: 20px 10px 0px;
+  gap: 40px;
+}
+
+.menu-mobile .btn-fechar {
+  padding: 20px 5%;
+}
+
+
+.menu-mobile .btn-fechar .close {
+  color: #000000;
+  width: 25px;
+  height: 25px;
+}
+
+.btn-fechar .close:hover {
+  cursor: pointer;
+  color: red;
+}
+
+#img-isabela {
+  display: none;
+}
+
+#explorer > li {
+  color: rgb(0, 0, 0);
+}
+
+.list {
+  width: 30px;
+  height: 30px;
+  color: #000000;
+}
+
+.list:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.overlay-menu {
+  background-color: #000000bb;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+  display: none;
+}

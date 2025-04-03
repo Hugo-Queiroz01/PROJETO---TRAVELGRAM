@@ -19,7 +19,7 @@ header .container {
 }
 
 /* * primeira div de #profile */
-#profile > div {
+#profile>div {
   max-width: 384px;
 }
 
@@ -58,4 +58,26 @@ header .container {
   align-items: center;
   gap: 8px;
 
+}
+
+@media (width <=1000px) {
+  #profile {
+    flex-direction: column;
+
+    & h1 {
+      text-align: center;
+    }
+
+    & p {
+      width: 100%;
+    }
+
+    & br {
+      display: none;
+    }
+  }
+
+  #info {
+    display: none;
+  }
 }
